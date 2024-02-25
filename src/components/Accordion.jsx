@@ -12,7 +12,11 @@ export const Accordion = () => {
     const handleSingleQuestion = (getCuurentId) => {
         setSelected(getCuurentId === selected ? null : getCuurentId)
     };
-    
+
+    const arrowIcon = (getCuurentId) => {
+        return selected === getCuurentId ? <FaArrowUp/> : <FaArrowDown/>;
+    };
+
 
 
 
